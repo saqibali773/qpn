@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FollowerFollowingVC">
+            <connections>
+                <outlet property="segmentControl" destination="2uT-Rs-id4" id="kKb-3a-EYI"/>
+                <outlet property="tableView" destination="Gdb-0l-hNf" id="EeP-Yi-Ik0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="47V-fM-Mo7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BxW-tW-Y5P">
+                            <rect key="frame" x="8" y="25" width="30" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="left-arrow"/>
+                            <connections>
+                                <action selector="backBtnClicked:" destination="-1" eventType="touchUpInside" id="IVN-1N-Wzz"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Follows" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBd-Wk-t0B">
+                            <rect key="frame" x="151" y="27" width="73" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.31372549020000001" green="0.0" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="SIb-br-FhL"/>
+                    </constraints>
+                </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2uT-Rs-id4">
+                    <rect key="frame" x="30" y="72" width="317" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="XlK-fl-yXP"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Following"/>
+                        <segment title="Follower"/>
+                    </segments>
+                    <color key="tintColor" red="0.31372549020000001" green="0.0" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="controlSegmentClicked:" destination="-1" eventType="valueChanged" id="wjx-bI-Qu9"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gdb-0l-hNf">
+                    <rect key="frame" x="0.0" y="118" width="375" height="549"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Mb1-Zy-0Os"/>
+                        <outlet property="delegate" destination="-1" id="HzU-5a-QqQ"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Gdb-0l-hNf" firstAttribute="top" secondItem="2uT-Rs-id4" secondAttribute="bottom" constant="18" id="3Ny-L6-2Dk"/>
+                <constraint firstItem="2uT-Rs-id4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="FRz-XP-lhq"/>
+                <constraint firstAttribute="trailing" secondItem="2uT-Rs-id4" secondAttribute="trailing" constant="28" id="YhH-Jq-deg"/>
+                <constraint firstAttribute="trailing" secondItem="Gdb-0l-hNf" secondAttribute="trailing" id="dyj-z0-zHh"/>
+                <constraint firstAttribute="bottom" secondItem="Gdb-0l-hNf" secondAttribute="bottom" id="k53-pC-VC7"/>
+                <constraint firstItem="47V-fM-Mo7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mZb-6b-i5p"/>
+                <constraint firstAttribute="trailing" secondItem="47V-fM-Mo7" secondAttribute="trailing" id="p0i-89-F33"/>
+                <constraint firstItem="2uT-Rs-id4" firstAttribute="top" secondItem="47V-fM-Mo7" secondAttribute="bottom" constant="8" id="rOu-gl-Ulq"/>
+                <constraint firstItem="Gdb-0l-hNf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vpX-3C-znJ"/>
+                <constraint firstItem="47V-fM-Mo7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ypO-FJ-6ki"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="left-arrow" width="32" height="32"/>
+    </resources>
+</document>

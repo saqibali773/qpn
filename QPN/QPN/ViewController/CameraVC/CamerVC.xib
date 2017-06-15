@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CamerVC">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="iEL-7U-Zka"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEH-Ar-bzi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAj-mX-o7i">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Yqn-aA-wDh">
+                            <rect key="frame" x="119" y="14" width="138" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="dec-sn-Zah"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.81568627450980391" green="0.81568627450980391" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hEH-Ar-bzi" secondAttribute="bottom" id="1ed-9C-Ori"/>
+                <constraint firstItem="hEH-Ar-bzi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Bu9-ev-07i"/>
+                <constraint firstAttribute="trailing" secondItem="cAj-mX-o7i" secondAttribute="trailing" id="RdD-Sb-j2a"/>
+                <constraint firstItem="cAj-mX-o7i" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XLD-Tb-mAb"/>
+                <constraint firstItem="hEH-Ar-bzi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZGi-1N-PXw"/>
+                <constraint firstItem="cAj-mX-o7i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kze-Pd-ziQ"/>
+                <constraint firstAttribute="trailing" secondItem="hEH-Ar-bzi" secondAttribute="trailing" id="s1O-78-IXT"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="4853" height="1557"/>
+    </resources>
+</document>

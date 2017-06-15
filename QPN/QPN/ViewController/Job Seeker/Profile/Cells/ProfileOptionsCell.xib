@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="profileOptionCell" id="KGk-i7-Jjw" customClass="ProfileOptionsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Meq-4k-V31">
+                        <rect key="frame" x="0.0" y="9" width="320" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8m-J7-abD">
+                                <rect key="frame" x="17" y="6" width="287" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" red="0.31372549020000001" green="0.0" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBK-nM-NXL">
+                                <rect key="frame" x="283" y="12" width="21" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="98v-jv-uf7"/>
+                                    <constraint firstAttribute="height" constant="21" id="DKm-2S-JOm"/>
+                                </constraints>
+                                <state key="normal" image="addUserDataBtn"/>
+                                <connections>
+                                    <action selector="addUserDataBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BON-MQ-JLk"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TNC-b9-Y6c">
+                                <rect key="frame" x="0.0" y="44" width="320" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="P66-5i-drj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TNC-b9-Y6c" firstAttribute="leading" secondItem="Meq-4k-V31" secondAttribute="leading" id="6Nt-ob-ecz"/>
+                            <constraint firstAttribute="trailing" secondItem="k8m-J7-abD" secondAttribute="trailing" constant="16" id="6SK-Pt-at3"/>
+                            <constraint firstAttribute="trailing" secondItem="TBK-nM-NXL" secondAttribute="trailing" constant="16" id="8pv-Xl-XFr"/>
+                            <constraint firstAttribute="bottom" secondItem="TNC-b9-Y6c" secondAttribute="bottom" id="E0y-6B-mNi"/>
+                            <constraint firstAttribute="bottom" secondItem="TBK-nM-NXL" secondAttribute="bottom" constant="12" id="OHd-cx-IFx"/>
+                            <constraint firstItem="k8m-J7-abD" firstAttribute="top" secondItem="Meq-4k-V31" secondAttribute="top" constant="6" id="TMT-ss-cJu"/>
+                            <constraint firstAttribute="trailing" secondItem="TNC-b9-Y6c" secondAttribute="trailing" id="d9e-2d-Mgq"/>
+                            <constraint firstItem="TBK-nM-NXL" firstAttribute="top" secondItem="Meq-4k-V31" secondAttribute="top" constant="12" id="lo3-ts-GsQ"/>
+                            <constraint firstItem="k8m-J7-abD" firstAttribute="leading" secondItem="Meq-4k-V31" secondAttribute="leading" constant="17" id="uCG-bY-RW3"/>
+                            <constraint firstAttribute="bottom" secondItem="k8m-J7-abD" secondAttribute="bottom" constant="6" id="y2P-TM-CAc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Meq-4k-V31" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3IO-r6-6KF"/>
+                    <constraint firstAttribute="bottom" secondItem="Meq-4k-V31" secondAttribute="bottom" id="EfD-vk-zhC"/>
+                    <constraint firstAttribute="trailing" secondItem="Meq-4k-V31" secondAttribute="trailing" id="N2e-9y-kUK"/>
+                    <constraint firstItem="Meq-4k-V31" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="mYB-Q2-OjJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="addBtn" destination="TBK-nM-NXL" id="azC-Q8-qjM"/>
+                <outlet property="bgView" destination="Meq-4k-V31" id="Rli-3w-UXw"/>
+                <outlet property="title" destination="k8m-J7-abD" id="1nK-FV-IUB"/>
+            </connections>
+            <point key="canvasLocation" x="-282" y="-38.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="addUserDataBtn" width="32" height="32"/>
+    </resources>
+</document>

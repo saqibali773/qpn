@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckBoxCell" id="KGk-i7-Jjw" customClass="CheckBoxCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABt-d1-6cb">
+                        <rect key="frame" x="0.0" y="59" width="320" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="NfN-VR-ckg"/>
+                        </constraints>
+                    </view>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Employed" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ayo-kh-MEy" customClass="MyCustomTF">
+                        <rect key="frame" x="75" y="14" width="136" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="mlm-NP-3kp"/>
+                            <constraint firstAttribute="width" secondItem="Ayo-kh-MEy" secondAttribute="height" multiplier="68:15" id="tJe-kh-1TC"/>
+                        </constraints>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                <color key="value" red="0.92156862750000001" green="0.92156862750000001" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jk0-LH-YI6">
+                        <rect key="frame" x="219" y="16" width="25" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <state key="normal" backgroundImage="unChecked"/>
+                        <state key="selected" backgroundImage="Checked-1"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CET-t8-NQu">
+                        <rect key="frame" x="53" y="14" width="213" height="30"/>
+                        <connections>
+                            <action selector="buttonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VzH-Kk-9uy"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Ayo-kh-MEy" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-17" id="9wO-ie-buH"/>
+                    <constraint firstAttribute="bottom" secondItem="ABt-d1-6cb" secondAttribute="bottom" id="JF4-Ly-fWR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="CET-t8-NQu" secondAttribute="trailing" constant="46" id="TmO-hh-kxS"/>
+                    <constraint firstItem="ABt-d1-6cb" firstAttribute="top" secondItem="Ayo-kh-MEy" secondAttribute="bottom" constant="15" id="YSy-6C-Ywe"/>
+                    <constraint firstItem="CET-t8-NQu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="bqa-qk-GR1"/>
+                    <constraint firstAttribute="trailing" secondItem="ABt-d1-6cb" secondAttribute="trailing" id="cq2-hp-R9u"/>
+                    <constraint firstItem="CET-t8-NQu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="45" id="d3I-TS-omM"/>
+                    <constraint firstItem="ABt-d1-6cb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gwC-yq-yHz"/>
+                    <constraint firstItem="ABt-d1-6cb" firstAttribute="top" secondItem="CET-t8-NQu" secondAttribute="bottom" constant="15" id="mAZ-i4-FER"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="checkBox" destination="Jk0-LH-YI6" id="kP2-wq-naD"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="58.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Checked-1" width="32" height="32"/>
+        <image name="unChecked" width="32" height="32"/>
+    </resources>
+</document>

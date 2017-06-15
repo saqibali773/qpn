@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meeting" translatesAutoresizingMaskIntoConstraints="NO" id="CJ4-f0-MU1">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vsH-dg-eIN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7W8-g1-1SA">
+                    <rect key="frame" x="23" y="25" width="30" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="8jz-F0-dow"/>
+                        <constraint firstAttribute="width" constant="30" id="UJQ-im-7TL"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="menu"/>
+                    <connections>
+                        <action selector="menuBtnClicked:" destination="-1" eventType="touchUpInside" id="mlK-r9-sFX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vsH-dg-eIN" secondAttribute="trailing" id="1u5-F1-jZy"/>
+                <constraint firstItem="CJ4-f0-MU1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2vW-O6-lef"/>
+                <constraint firstAttribute="trailing" secondItem="CJ4-f0-MU1" secondAttribute="trailing" id="C7s-Ah-PUQ"/>
+                <constraint firstItem="7W8-g1-1SA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="23" id="Da0-pU-ihW"/>
+                <constraint firstItem="vsH-dg-eIN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NaA-Og-GeW"/>
+                <constraint firstAttribute="bottom" secondItem="CJ4-f0-MU1" secondAttribute="bottom" id="RUf-Ca-Ptk"/>
+                <constraint firstItem="CJ4-f0-MU1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Zcm-o8-6dg"/>
+                <constraint firstItem="vsH-dg-eIN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZyH-3I-RSB"/>
+                <constraint firstAttribute="trailing" secondItem="CJ4-f0-MU1" secondAttribute="trailing" id="e85-QO-M7P"/>
+                <constraint firstItem="CJ4-f0-MU1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f9n-TO-dyN"/>
+                <constraint firstAttribute="bottom" secondItem="CJ4-f0-MU1" secondAttribute="bottom" id="fcS-yp-gbd"/>
+                <constraint firstItem="7W8-g1-1SA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="pEg-x6-9Hd"/>
+                <constraint firstItem="CJ4-f0-MU1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rXj-12-Zpa"/>
+                <constraint firstAttribute="bottom" secondItem="vsH-dg-eIN" secondAttribute="bottom" id="sfG-fe-tWF"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="meeting" width="750" height="1080"/>
+        <image name="menu" width="64" height="64"/>
+    </resources>
+</document>
